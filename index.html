@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Entrega</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <nav class="nav-menu">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <div class="menu-links">
+        <a href="#platos">Menú</a>
+        <a href="#historia">Quiénes somos</a>
+        <a href="#carrito" class="carrito" id="carrito">🛒 Carrito <span id="cart-count">0</span></a>
+      </div>
+      <div class="cart-summary" id="cart-summary">
+        <p class="contador" id="cart-details">No hay productos seleccionados.</p>
+        <button class="reset" id="reset-btn" onclick="resetCart()">Limpiar Carrito</button>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Bienvenida -->
+    <section>
+      <h1 class="text" id="Bienvenido">"Bienvenidos a "las pastas de BETO"</h1>
+      <p class="descripcion1" id="descripcion1">
+        Las pastas de Beto son mucho más que una pasta: representan la unión de la familia y el valor de las
+        tradiciones.
+        <br>
+        Cada receta nace del cariño transmitido de generación en generación, con el sabor casero que convierte cada
+        encuentro en un buen momento compartido.
+        <br>
+        Alrededor de la mesa, las pastas se transforman en símbolo de alegría, compañía y recuerdos que perduran.
+      </p>
+
+      <!-- Botón destacado -->
+      <a href="#reserva" class="btn-reserva">Reserva tu mesa ahora</a>
+    </section>
+
+    <!-- Galería de platos -->
+    <section id="platos" class="productos">
+      <h2>Nuestros Platos</h2>
+
+      <div class="card">
+        <img src="Spaghetti Carbonara.png" alt="Spaghetti Carbonara">
+        <h3>Spaghetti Carbonara</h3>
+        <p>Pasta con panceta, huevo y queso parmesano.</p>
+      </div>
+
+      <div class="card">
+        <img src="Fettuccine Alfredo.png" alt="Fettuccine Alfredo">
+        <h3>Fettuccine Alfredo</h3>
+        <p>Fettuccine con salsa cremosa de manteca y parmesano.</p>
+      </div>
+
+      <div class="card">
+        <img src="Lasagna Bolognese.png" alt="Lasagna Bolognese">
+        <h3>Lasagna Bolognese</h3>
+        <p>Capas de pasta con salsa boloñesa, bechamel y queso gratinado.</p>
+      </div>
+
+      <div class="card">
+        <img src="Penne Arrabbiata.png" alt="Penne Arrabbiata">
+        <h3>Penne Arrabbiata</h3>
+        <p>Penne con salsa de tomate picante y albahaca fresca.</p>
+      </div>
+
+      <div class="card">
+        <img src="Ravioli de Espinaca y Ricotta.png" alt="Ravioli de Espinaca y Ricotta">
+        <h3>Ravioli de Espinaca y Ricotta</h3>
+        <p>Ravioles rellenos de espinaca y ricotta con salsa de tomate.</p>
+      </div>
+
+
+      <div class="card">
+        <img src="Ravioli de Jamon y Queso.png" alt="Ravioli de Jamon y Queso">
+        <h3>Ravioli de Jamon y Queso</h3>
+        <p>Ravioles rellenos de jamón y queso con salsa de tomate y albahaca.</p>
+      </div>
+    </section>
+
+    <!--Nuestra Historia-->
+    <section id="historia">
+      <h2 class="sobre-nosotros">Nuestra Historia:</h2>
+      <p class="descripcion2">En Las pastas de Beto llevamos la pasión italiana directo a tu mesa. Cada plato está
+        preparado con recetas
+        tradicionales y
+        los mejores ingredientes frescos, para que disfrutes una experiencia auténtica, cálida y deliciosa.
+        <br>
+        Nuestro compromiso es que cada visita se convierta en un momento especial, lleno de sabor y hospitalidad.
+      </p>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section">
+      <h2>Lo que dicen nuestros clientes:</h2>
+      <div>
+        <blockquote class="testimonio">
+          <p>"La mejor pasta que probé en mi vida, auténtico sabor italiano."</p>
+          <cite>- María G.</cite>
+        </blockquote>
+        <blockquote class="testimonio">
+          <p>"Ambiente cálido y atención excelente, siempre vuelvo."</p>
+          <cite>- Juan P.</cite>
+        </blockquote>
+        <blockquote class="testimonio">
+          <p>"Los ravioles de ricota son un clásico, ¡imperdibles!"</p>
+          <cite>- Sofía R.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="reserva" id="reserva">
+      <h2>Reserva tu mesa</h2>
+      <form action="https://formspree.io/f/xkojlwee" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="personas">Número de personas:</label><br>
+        <input type="number" id="personas" name="personas" min="1" required><br><br>
+
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <label for="hora">Hora:</label><br>
+        <input type="time" id="hora" name="hora" required><br><br>
+
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>© 2026 Restorán Las pastas de Beto - Todos los derechos reservados</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.menu-links').classList.toggle('show');
+    }
+
+    const cart = {};
+    const cartButton = document.getElementById('carrito');
+    const cartCountEl = document.getElementById('cart-count');
+    const cartDetailsEl = document.getElementById('cart-details');
+
+    function updateCartUI() {
+      const totalItems = Object.values(cart).reduce((sum, qty) => sum + qty, 0);
+      cartCountEl.innerText = totalItems;
+
+      if (totalItems === 0) {
+        cartDetailsEl.innerHTML = 'No hay productos seleccionados.';
+        cartButton.classList.remove('has-items');
+      } else {
+        const itemsHtml = Object.entries(cart)
+          .map(([name, qty]) => `<strong>${name}</strong>: ${qty}`)
+          .join('<br>');
+        cartDetailsEl.innerHTML = `Productos seleccionados:<br>${itemsHtml}`;
+        cartButton.classList.add('has-items');
+      }
+    }
+
+    function addToCart(name) {
+      cart[name] = (cart[name] || 0) + 1;
+      updateCartUI();
+      cartButton.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetCart() {
+      Object.keys(cart).forEach(key => delete cart[key]);
+      updateCartUI();
+    }
+
+    document.querySelectorAll('.card').forEach(card => {
+      const title = card.querySelector('h3')?.innerText;
+      if (!title) return;
+
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'add-to-cart';
+      button.innerText = 'Agregar al carrito';
+      button.addEventListener('click', () => addToCart(title));
+
+      card.appendChild(button);
+    });
+
+    updateCartUI();
+  </script>
+
+</body>
+
+</html>
