@@ -14,6 +14,7 @@ header {
     /* centra el logo */
     background-size: cover;
     /* el logo ocupa todo el header */
+    background-color: transparente;
     height: 350px;
     /* ajustá la altura según el tamaño del logo */
     display: flex;
