@@ -1,0 +1,44 @@
+[
+  {
+    "id": "spaghetti-carbonara",
+    "nombre": "Spaghetti Carbonara",
+    "descripcion": "Pasta con panceta, huevo y queso parmesano.",
+    "precio": 9800,
+    "imagen": "Spaghetti Carbonara.png"
+  },
+  {
+    "id": "fettuccine-alfredo",
+    "nombre": "Fettuccine Alfredo",
+    "descripcion": "Fettuccine con salsa cremosa de manteca y parmesano.",
+    "precio": 9500,
+    "imagen": "Fettuccine Alfredo.png"
+  },
+  {
+    "id": "lasagna-bolognese",
+    "nombre": "Lasagna Bolognese",
+    "descripcion": "Capas de pasta con salsa boloñesa, bechamel y queso gratinado.",
+    "precio": 11200,
+    "imagen": "Lasagna Bolognese.png"
+  },
+  {
+    "id": "penne-arrabbiata",
+    "nombre": "Penne Arrabbiata",
+    "descripcion": "Penne con salsa de tomate picante y albahaca fresca.",
+    "precio": 8900,
+    "imagen": "Penne Arrabbiata.png"
+  },
+  {
+    "id": "ravioli-espinaca-ricotta",
+    "nombre": "Ravioli de Espinaca y Ricotta",
+    "descripcion": "Ravioles rellenos de espinaca y ricotta con salsa de tomate.",
+    "precio": 10300,
+    "imagen": "Ravioli de Espinaca y Ricotta.png"
+  },
+  {
+    "id": "ravioli-jamon-queso",
+    "nombre": "Ravioli de Jamon y Queso",
+    "descripcion": "Ravioles rellenos de jamón y queso con salsa de tomate y albahaca.",
+    "precio": 10800,
+    "imagen": "Ravioli de Jamon y Queso.png"
+  }
+]
