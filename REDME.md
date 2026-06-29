@@ -1,4 +1,4 @@
-# Las Pastas de Beto 🍝
+# Il Sogno Italiano 🍝
 
 Sitio web de e-commerce para un restaurante de pastas artesanales italianas. Permite ver el menú (cargado dinámicamente desde una API propia), agregar productos a un carrito de compras persistente, editar cantidades, y enviar el pedido por WhatsApp o una consulta por el formulario de contacto.
 
