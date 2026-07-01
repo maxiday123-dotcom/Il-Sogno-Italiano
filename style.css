@@ -39,9 +39,8 @@ header {
   background-position: top center;
   height: 900px;
   width: 100%;
-  min-height: 900px;
-  top: 0;
-  left: 0;
+  min-height: 100px;
+  margin-top: -200px; /* Ajusta según sea necesario */
 }
 
 @media (max-width: 1024px) {
@@ -195,9 +194,9 @@ header {
 }
 
 .descripcion1 {
-    position: center;
-    top: 100px; /* 🔑 sube el texto 100px */
-    margin: 0; /* asegurate de que no tenga margen extra */
+    position: relative;
+    top: -50px; /* Ajusta según sea necesario */ 
+    margin-top: 50px; /* Ajusta según sea necesario */
     text-align: center; /* opcional: centra el texto */
     background-color: brown;
     text-align: left;
@@ -206,10 +205,9 @@ header {
     box-shadow: 5px 4px 8px rgba(7, 7, 7, 0.2);
     border-radius: 20px;
     text-shadow: 1px 1px 3px brown;
-    padding: 50px;
+    padding: 36px;
 
 }
-
 @media (max-width: 768px) {
     .descripcion1 {
         padding: 25px;
